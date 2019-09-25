@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>HTML form</title>
+	<meta charset="utf-8">
+
+	<style>
+		label {
+			display: block;
+			margin-bottom: 2em;
+		}
+	</style>
+</head>
+<body>
+	<h1>HTML Form</h1>
+
+	<form action="./index.html" method="post">
+		<label>Name:
+			<input type="text" name="formData[name]" placeholder="name" required>
+		</label>
+
+		<label>Age:				
+			<input type="radio" name="formData[age]" value="<18" checked>&lt;18
+			<input type="radio" name="formData[age]" value="19-35">19-35
+			<input type="radio" name="formData[age]" value="36-48">36-48
+			<input type="radio" name="formData[age]" value=">49">&gt;49
+		</label>
+
+		<label>Profession:
+			<input type="text" name="formData[profession]" placeholder="profession" required>
+		</label>
+
+		<label>Country:
+			<select name=formData[country]>
+				<option value="Portugal">Portugal</option>
+				<option value="US">US</option>
+				<option value="Japan">Japan</option>
+			</select>
+		</label>
+
+		<label>Interests:
+			<input type="checkbox" name="formData[interests]" value="pokemon">Pokemon
+			<input type="checkbox" name="formData[interests]" value="barbies">Barbies
+			<input type="checkbox" name="formData[interests]" value="asketball">Basketball
+		</label>
+
+		<label>How did you find out about the website?
+			<textarea name="formData[origin]" rows="4" cols="50" required="">Tell us how you discovered this website!</textarea>
+		</label>
+
+		<button>Submit</button>
+
+	</form>
+</body>
+</html>
