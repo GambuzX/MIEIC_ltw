@@ -19,11 +19,6 @@ html {
     font-family: var(--font-1), var(--font-2), Times, serif;
 }
 
-body {
-    width: 60em;
-    margin: 0 auto;
-}
-
 body > header {
     margin-top: 3px;
     background-color: var(--main-color-2);
@@ -37,7 +32,6 @@ body > header > * {
 
 body > header > h2 {
     font-size: 1em;
-    margin: 0.5em 0;
 }
 
 #signup a {
@@ -69,6 +63,7 @@ nav#menu > ul > li{
     border-top: 4px solid;
     display: block;
     padding: 1em;
+    background-color: white;
 }
 
 nav#menu > ul > li > a{
@@ -119,11 +114,13 @@ aside#related article p {
 
 section#news {
     margin-top: 1em;
+    margin-right: 1em;
 }
 
 section#news article {
     position: relative;
     margin-bottom: 1em;
+    background-color: white;
 }
 
 section#news article header {
