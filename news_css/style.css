@@ -48,10 +48,6 @@ header a {
     text-decoration: none;
 }
 
-nav#menu #hamburger {
-    display: none;
-}
-
 nav#menu > ul  {
     list-style: none;
     padding-left: 0;
@@ -74,27 +70,27 @@ nav#menu > ul > li > a{
 }
 
 nav#menu > ul > li:nth-of-type(1){
-    border-top-color: var(--section-color-1);
+    border-color: var(--section-color-1);
 }
 
 nav#menu > ul > li:nth-of-type(2){
-    border-top-color: var(--section-color-2);
+    border-color: var(--section-color-2);
 }
 
 nav#menu > ul > li:nth-of-type(3){
-    border-top-color: var(--section-color-3);
+    border-color: var(--section-color-3);
 }
 
 nav#menu > ul > li:nth-of-type(4){
-    border-top-color: var(--section-color-4);
+    border-color: var(--section-color-4);
 }
 
 nav#menu > ul > li:nth-of-type(5){
-    border-top-color: var(--section-color-5);
+    border-color: var(--section-color-5);
 }
 
 nav#menu > ul > li:nth-of-type(6){
-    border-top-color: var(--section-color-6);
+    border-color: var(--section-color-6);
 }
 
 aside#related {
