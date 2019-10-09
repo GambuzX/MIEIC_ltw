@@ -139,7 +139,7 @@ section#news article p {
     font-family: var(--font-2);
 }
 
-section#news article p:first-of-type:first-letter {
+section#news article > p:first-of-type:first-letter {
     font-size: 2em;
 }
 
@@ -153,6 +153,14 @@ section#news article footer {
 
 section#news article footer a{
     color: white;
+}
+
+section#news article footer .author::before{
+    content: 'By ';
+}
+
+section#news article footer .comments::after{
+    content: ' comments';
 }
 
 section#news article footer .tags, section#news article footer .date{
