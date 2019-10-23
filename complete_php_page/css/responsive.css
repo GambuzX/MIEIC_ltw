@@ -1,0 +1,130 @@
+#collapse-icon {
+    display: none;
+}
+
+nav#menu #hamburger {
+    display: none;
+}
+
+@media (max-width: 60em) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #related {
+        display: none;
+    }
+
+    section#news {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 30em) {
+
+    body > header > h2 {
+        display: none;
+    }
+
+    section#news {
+        margin-top: 0;
+    }
+
+    section#news article header {
+        position: static;
+        padding-top: 0.5em;
+        margin-left: 1em;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+    }
+
+    section#news article header h1 {
+        text-shadow: none;
+    }
+
+    section#news article header h1 a{
+        color: black;
+    }
+
+    #collapse-icon {
+        display: block;
+    }
+
+    nav#menu > ul {
+        flex-direction: column;
+        max-height: 0;
+
+        transition: max-height 0.15s ease-out;
+        overflow: hidden;
+    }
+
+    nav#menu > ul > li {
+        background-color: #d8d8d8;
+        text-align: left;
+        border-top: none;
+        border-left: 5px solid;
+    }
+
+    nav#menu > ul > li > a{
+        font-weight: 300;
+    }
+
+    nav#menu > ul > li:nth-of-type(1){
+        border-left-color: var(--section-color-1);
+    }
+    
+    nav#menu > ul > li:nth-of-type(2){
+        border-left-color: var(--section-color-2);
+    }
+    
+    nav#menu > ul > li:nth-of-type(3){
+        border-left-color: var(--section-color-3);
+    }
+    
+    nav#menu > ul > li:nth-of-type(4){
+        border-left-color: var(--section-color-4);
+    }
+    
+    nav#menu > ul > li:nth-of-type(5){
+        border-left-color: var(--section-color-5);
+    }
+    
+    nav#menu > ul > li:nth-of-type(6){
+        border-left-color: var(--section-color-6);
+    }
+
+    nav#menu #hamburger {
+        display: hidden;
+    }
+
+    #menu .hamburger {
+        background-color: #474747;
+        height: 3em;
+        width: 100%;
+        display: inline-block;
+    }
+
+    #menu .hamburger::after {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f0c9";
+        color: #d8d8d8;
+        
+        margin: 1em;
+        display: inline-block;
+    }
+
+    #hamburger:checked + .hamburger::after{
+        content: "\f00d";
+    }   
+
+    #hamburger:checked ~ ul {
+        max-height: 500px;
+
+        transition: max-height 0.25s ease-in;
+    }
+}
